@@ -6,10 +6,13 @@ import './App.css';
 
 
 function App() {
+  const user = {firstName: "Amy", lastName: "Mansel", avatar: "/profile-hex.png"};
+  
+
   return (
     <div className="App">
       <Navigation />
-      <Profile />
+      <Profile {...user} />  
       <main className='container'>
         <TweetList />
         <TweetForm />
